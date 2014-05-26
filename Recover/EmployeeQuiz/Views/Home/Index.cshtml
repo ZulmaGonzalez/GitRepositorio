@@ -1,0 +1,37 @@
+﻿@model EmployeeQuiz.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+     <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css" />
+    <title>Index</title>
+</head>
+<body>
+    <center>
+        <h1 class="letra">Empresa Zuly y Asociados S.A de C.V</h1>
+    <h1 class="dato">Bienvenido Empleado</h1>
+        </center>
+
+    <div class="Index">
+        
+        <center>
+        @using (Html.BeginForm())
+        {
+            @*validacion de formulario*@
+        @Html.ValidationSummary()
+            <span class="Ingresar"> Ingresar el codigo de Empleado</span>
+            <p>@Html.TextBoxFor(m => m.Id)</p>
+            <input class="boton negro redondo" type="submit" value="Buscar empleado" /> 
+        }
+         </center>       
+    </div>
+    
+
+</body>
+</html>

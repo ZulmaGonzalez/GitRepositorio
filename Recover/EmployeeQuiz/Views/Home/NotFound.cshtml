@@ -1,0 +1,25 @@
+﻿@model EmployeeQuiz.Models.Employee
+
+@{
+    ViewBag.Title = "NotFound";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NotFound</title>
+</head>
+<body>
+    <div>
+        <h1>La informacion que buscaba no puede ser encontrada</h1>
+<h2>Detalles</h2>
+<ul>
+    <li><b>Codigo de Error: </b>@ViewBag.ErrorCode</li>
+    <li><b>Descripcion:</b>@ViewBag.Description</li>
+    </ul>
+        <center><input type="button" value="Regresar" onclick="window.location.href = 'http://localhost:49160/'" /></center>
+    </div>
+</body>
+</html>
